@@ -5,7 +5,7 @@ import Greeting from "./components/Greeting";
 export default function App() {
   return (
     <div>
-      <Greeting name="Mahesh Muttinti" />
+      <Greeting name="This is a Simple Counter" />
       <Counter />
     </div>
   );

@@ -1,3 +1,68 @@
+:root {
+  --success-bg-color: #34ed23;
+  --success-color: #328006;
+  --warning-bg-color: #f5814c;
+  --warning-color: #b6220f;
+}
+body {
+  background-color: azure;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
 * {
   font-family: Lato;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.container.center {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+._m12 {
+  margin: 12px 24px;
+}
+.btn {
+  outline: 0;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background-color: wheat;
+  font-size: 1.2rem;
+  width: max-content;
+  align-self: center;
+  cursor: pointer;
+  opacity: 0.9;
+  border: 1px solid transparent;
+  transition-duration: 10ms;
+}
+.btn:hover {
+  box-shadow: 2px 4px 2px -2px rgb(177, 211, 241);
+}
+.btn:focus {
+  box-shadow: 0 0 0px 2px rgb(73, 210, 228);
+}
+.btn:active {
+  opacity: 1;
+}
+.success {
+  color: var(--success-color);
+  background-color: var(--success-bg-color);
+}
+.warning {
+  color: var(--warning-color);
+  background-color: var(--warning-bg-color);
 }

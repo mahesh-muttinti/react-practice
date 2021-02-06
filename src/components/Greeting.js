@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import "../style.css"
+import "../style.css";
 export default class Greeting extends Component {
   render() {
     return (
-      <>
-        <h3>Hello, Good Morning {this.props.name}</h3>
-      </>
+      <div class="flex-center">
+        <h1>Hello, Good Morning!</h1>
+        <h3>{this.props.name}</h3>
+      </div>
     );
   }
 }
